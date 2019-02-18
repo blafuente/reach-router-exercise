@@ -7,17 +7,29 @@ class BootstrapNavBar extends Component{
     return(
 			
 		<nav className="navbar navbar-default navbar-fixed-top">
-		  <div className="container-fluid">
+		  <div className="container-fluid" class="navbar">
 		    <div className="navbar-header">
-		      <a className="navbar-brand" href="#">A T L</a>
+		      <a className="navbar-brand" href="/">A T L</a>
 		    </div>
-		    <ul className="nav navbar-nav">
-		    	<Link to="/">Home</Link>
-		      <Link to="/about">About</Link>
-		      <Link to="/Images">Images</Link>
-					<Link to="/MayorMessage">Mayor's Message</Link>
-					<Link to="/Atlanta">ATL Weather</Link>
-		    </ul>
+				<div class="row">
+					{/* <ul className="nav navbar-nav"> */}
+					<div class="col-2">
+						<Link to="/">Home </Link>
+					</div>
+					<div class="col-2">
+						<Link to="/about">About </Link> 
+					</div>
+					<div class="col-2">
+						<Link to="/Images">Images </Link>
+					</div>
+					<div class="col-2">
+						<Link to="/MayorMessage">Mayor's Message </Link>
+					</div>
+					<div class="col-2">
+						<Link to="/Atlanta">ATL Weather </Link>
+					</div>
+					{/* </ul> */}
+				</div>
 		  </div>
 
 

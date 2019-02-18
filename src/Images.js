@@ -24,9 +24,8 @@ class Images extends Component{
 		})
 
 		return(
-			<div className="image-list" class="atlimage">
-				{imageList}
-				
+			<div className="image-list">
+				{imageList}		
 			</div>
 		)
 	}

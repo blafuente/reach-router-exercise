@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class Atlanta extends Component {
 	constructor(props) {
@@ -24,6 +24,7 @@ class Atlanta extends Component {
 			let mintemp = weatherData.data.main.temp_min
 			let maxtemp = weatherData.data.main.temp_max
 			let desc = weatherData.data.weather[0].description
+			let humidity = weatherData.data.main.humidity
 			console.log(temperature)
 			this.setState({
 				icon: icon,
@@ -31,6 +32,7 @@ class Atlanta extends Component {
 				temp_min: mintemp,
 				temp_max: maxtemp,
 				desc: desc,
+				hum: humidity
 			})
 
 		})
@@ -46,6 +48,7 @@ class Atlanta extends Component {
 					<li>Min Temp: {this.state.temp_min} degrees </li>
 					<li>Max Temp: {this.state.temp_max} degrees </li>
 					<li>Description: {this.state.desc}</li>
+					<li>Humidity: {this.state.hum} %</li>
 				</ul>
 				
 			</div>
