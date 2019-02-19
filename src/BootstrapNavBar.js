@@ -4,37 +4,24 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class BootstrapNavBar extends Component{
   render(){
-    return(
-			
-		<nav className="navbar navbar-default navbar-fixed-top">
-		  <div className="container-fluid" class="navbar">
-		    <div className="navbar-header">
-		      <a className="navbar-brand" href="/">A T L</a>
-		    </div>
-				<div class="row">
-					{/* <ul className="nav navbar-nav"> */}
-					<div class="col-2">
-						<Link to="/">Home </Link>
+    return(	
+			<nav className="navbar navbar-default navbar-fixed-top">
+				<div className="container-fluid" class="navbar">
+					<div className="navbar-header">
+						<a className="navbar-brand" href="/">A T L</a>
 					</div>
-					<div class="col-2">
-						<Link to="/about">About </Link> 
+					<div class="row" id="navBarRow">
+						<ul className="nav navbar-nav">
+							<li><Link to="/">Home </Link></li>
+							<li><Link to="/about">About </Link></li>
+							<li><Link to="/Images">Images </Link></li>
+							<li><Link to="/MayorMessage">Mayor's Message </Link></li>
+							<li><Link to="/Atlanta">ATL Weather </Link></li>
+						</ul>
 					</div>
-					<div class="col-2">
-						<Link to="/Images">Images </Link>
-					</div>
-					<div class="col-2">
-						<Link to="/MayorMessage">Mayor's Message </Link>
-					</div>
-					<div class="col-2">
-						<Link to="/Atlanta">ATL Weather </Link>
-					</div>
-					{/* </ul> */}
 				</div>
-		  </div>
-
-
-		</nav>   
-	)
+			</nav>   
+		)
   }
 }
 

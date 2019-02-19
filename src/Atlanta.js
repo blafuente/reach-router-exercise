@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import './App.css';
 
 class Atlanta extends Component {
 	constructor(props) {
@@ -40,7 +41,7 @@ class Atlanta extends Component {
 
 	render(){
 		return(
-			<div>
+			<div id="atlweather">
 				<h1>Real-time Atlanta Weather!</h1>
 				<ul>
 					<li>Icon: {this.state.icon}</li>

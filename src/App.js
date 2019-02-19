@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import BootstrapNavBar from './BootstrapNavBar'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import About from './About';
 import Home from './Home';
+import About from './About';
 import Images from './Images';
 import MayorMessage from './MayorMessage';
 import Atlanta from './Atlanta';
